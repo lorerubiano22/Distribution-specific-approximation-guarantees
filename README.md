@@ -1,7 +1,7 @@
 # Distribution-specific-approximation-guarantees
 https://doi.org/10.1016/j.ejor.2025.11.016
 
-# Repository Guide – Two Instance Families (EC and RP)
+# Two Instance Families (EC and RP)
 
 This repository archives **input data instances** for two distinct experimental settings used in the companion study:
 
@@ -12,16 +12,14 @@ Because the two families follow different modeling assumptions, parameter-genera
 
 ---
 
-## What to read
-
-### 1) EC study documentation
+## 1) EC study documentation
 **File:** `README_EC_instances.md`
 
 Use this document if you are working with instance files whose names start with:
 
 - `input_EC_...`
 ---
-### 2) RP study documentation
+## 2) RP study documentation
 **File:** `README_RP_instances.md`
 
 Use this document if you are working with instance files whose names start with:
