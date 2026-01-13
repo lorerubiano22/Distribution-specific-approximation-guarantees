@@ -2,6 +2,8 @@
 
 This repository contains **only input data instances** for the **Error Components (EC)** experimental setting described in the companion paper (EC correlation structures + σ-normalization regimes).
 
+Link: https://rwth-aachen.sciebo.de/s/Lf97rA9kAgK2Ttr
+
 The instances are provided in two equivalent formats:
 
 - **`.gdx`**: canonical machine-readable input for GAMS-based experiments
