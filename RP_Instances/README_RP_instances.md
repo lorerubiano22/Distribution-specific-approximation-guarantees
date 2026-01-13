@@ -25,20 +25,20 @@ and the corresponding text export:
 ### Meaning of tokens
 
 - **`input_RP`**  
-  Instance belongs to the **Random Parameters / Random Taste Heterogeneity** specification.
+Instance belongs to the **Random Parameters / Random Taste Heterogeneity** specification.
 
 - **`I_<n>`**  
-  Number of products in the instance (cardinality of set `i`).  
-  Note: in the study design, the **opt-out alternative is treated as the last “product” index** (for convenience in indexing).
+Number of products in the instance (cardinality of set `i`).  
+Note: in the study design, the **opt-out alternative is treated as the last “product” index** (for convenience in indexing).
 
 - **`corr_0`**  
-  Correlation identifier. For RP instances this is **always `0`** because **correlation structures do not apply** in the Random Parameters setting. (Correlation is handled in a separate instance family, e.g., Error Components.)
+Correlation identifier. For RP instances this is **always `0`** because **correlation structures do not apply** in the Random Parameters setting. (Correlation is handled in a separate instance family, e.g., Error Components.)
 
 - **`revscheme_<r>`**  
-  Revenue scheme identifier. It specifies which revenue construction rule/scenario is used for the instance.
+Revenue scheme identifier. It specifies which revenue construction rule/scenario is used for the instance.
 
 - **`seed_<s>`**  
-  Fixed random seed used by the instance generator. This ensures the utility samples (and any other stochastic draws) are exactly reproducible.
+Fixed random seed used by the instance generator. This ensures the utility samples (and any other stochastic draws) are exactly reproducible.
 
 ### Example
 
@@ -81,8 +81,8 @@ For a given configuration `(I_<n>, revscheme_<r>, seed_<s>)`, the instance gener
 1. Creates the product index set `i` (including opt-out as the last index).
 2. Creates the realization set `g` (Monte Carlo samples).
 3. Generates **random-parameter utility samples** for each `(i, g)` according to the RP design described in the paper:
-   - utilities are sampled with a controlled dispersion/variance,
-   - expectations in the objective are approximated by averaging over `g`.
+- utilities are sampled with a controlled dispersion/variance,
+- expectations in the objective are approximated by averaging over `g`.
 4. Assigns revenues according to the selected revenue scheme `revscheme_<r>` (either stored explicitly as parameters or applied internally by the downstream code, depending on implementation).
 
 ### Use in the RP model (conceptual mapping)
