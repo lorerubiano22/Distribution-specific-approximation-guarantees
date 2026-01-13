@@ -2,14 +2,11 @@
 # Random Parameters (RP) –  Instances (GDX + TXT)
 
 This repository contains **only input data** for the **Random Parameters (RP)** model family used in the computational study.  
-No optimization models (`.gms`) or solver scripts are included here. The purpose is **transparent reporting and reproducibility** of the inputs used to generate the numerical results.
 
 Each instance is provided in two equivalent formats:
+Link: https://rwth-aachen.sciebo.de/s/C6dMXZwxZCNYQwD
 
 - **`.gdx`**: canonical machine-readable input file (intended to be read by a GAMS-based implementation of the RP model).
-
-The `.txt` file does not contain additional information; it mirrors the `.gdx`.
-
 ---
 
 ## 1) File naming convention (the filename is the metadata)
