@@ -1,5 +1,5 @@
-```markdown
-# Random Parameters (RP) – Input Instances (GDX + TXT)
+
+# Random Parameters (RP) –  Instances (GDX + TXT)
 
 This repository contains **only input data** for the **Random Parameters (RP)** model family used in the computational study.  
 No optimization models (`.gms`) or solver scripts are included here. The purpose is **transparent reporting and reproducibility** of the inputs used to generate the numerical results.
@@ -112,4 +112,4 @@ All such quantities are deterministically reconstructible from the stored inputs
 
 These instances correspond to the Random Parameters (RP) experimental setting described in the companion paper.  
 When reporting results, always reference the exact instance filename used (including `I`, `revscheme`, and `seed`).
-```
+
