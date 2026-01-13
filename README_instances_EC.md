@@ -1,4 +1,4 @@
-# EC (Error Components) – Input Instances Repository (GDX + TXT)
+# EC (Error Components) – Instances (GDX + TXT)
 
 This repository contains **only input data instances** for the **Error Components (EC)** experimental setting described in the companion paper (EC correlation structures + σ-normalization regimes).
 
@@ -86,7 +86,7 @@ The `.txt` export mirrors these symbols and values exactly.
 
 ---
 
-## 3. Bridge to the paper: how instances are generated (conceptual recipe)
+## 3. How instances are generated (conceptual recipe)
 
 The paper’s EC setting creates **correlated unobserved utility** by combining:
 1) a product-specific utility component, and  
@@ -158,33 +158,6 @@ Common examples include:
   The final assembled `U(i,g,level)` is not stored as a separate parameter because it can be reconstructed from the components above.
 
 This repository therefore stores the **minimal sufficient statistics** required to reproduce the EC experiment outcomes, while keeping instances compact and versionable.
-
----
-
-## 6. Recommended repository structure
-
-A practical layout for data-only versioning:
-
-- `instances/`
-  - `input_EC_... .gdx`
-  - `input_EC_... .txt`
-
-Optional (if you want extra traceability without shipping the full generator):
-- `docs/`
-  - `instance_schema.md` (symbol list + domains)
-  - `corr_types.md` (short description of each `corr_<c>` ECS option)
-  - `revenue_schemes.md` (short description of each `revscheme_<r>` option)
-  - `sigma_normalizations.md` (definition of `sigmaRel_<k>` regimes)
-
----
-
-## 7. Practical notes for GitLab
-
-- `.gdx` files can become large. Consider enabling **Git LFS** for `*.gdx` if repository size grows.
-- The `.txt` exports are intended to support:
-  - human inspection,
-  - meaningful diffs between instance variants,
-  - quick debugging (e.g., verifying the structure of `corr(i,ec)` and cardinalities of sets).
 
 ---
 
